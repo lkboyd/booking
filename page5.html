@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/title.css"> <!-- title bar and close button adn heading -->
+    <link rel="stylesheet" href="css/nav.css"> <!-- top navigation section -->
+    <link rel="stylesheet" href="css/page5.css"> <!-- pages own -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+
+<div id="main">
+    <div class="title-bar">
+        <p class="title-text">Dental online booking system</p>
+        <div class="close">
+        </div>
+    </div>
+
+    <p id="heading">online booking</p>
+
+    <div class="nav">
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>1</p>
+            </div>
+            <p>Select Service</p>
+        </div>
+        <img src="img/arrow_blue.png"></img>
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>2</p>
+            </div>
+            <p>Select Dentist</p>
+        </div>
+        <img src="img/arrow_blue.png"></img>
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>3</p>
+            </div>
+            <p>Select Date &amp; Time</p>
+        </div>
+        <img src="img/arrow_blue.png"></img>
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>4</p>
+            </div>
+            <p>Selection summary</p>
+        </div>
+        <img src="img/arrow_blue.png"></img>
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>5</p>
+            </div>
+            <p>Payment Details</p>
+        </div>
+        <img src="img/arrow_blue.png"></img>
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>6</p>
+            </div>
+            <p>Payment Details</p>
+        </div>
+        <img src="img/arrow_blue.png"></img>
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>7</p>
+            </div>
+            <p>Booking Confirmation</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="address">
+            <p>Patient Details</p>
+            <input type="radio" name="same_as_home">Select if same as home address
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <td>
+                        <select name="title">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>First name</th>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+                <tr>
+                    <th>Last name</th>
+                    <td><input type="text" name="lname"></td>
+                </tr>
+                <tr id="postcode">
+                    <th>Post code</th>
+                    <td>
+                        <input type="text" name="postcode">
+                        <span>Lookup</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td><input type="text" name="address"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="pay_proc">
+            <table>
+                <tr>
+                    <th>Card type</th>
+                    <td>
+                        <select name="card_type">
+                            <option value=""></option>
+                        </select>
+                        <img src="img/pay_icon.png">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Card Number</th>
+                    <td>
+                        <input type="text" name="card_number">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Start date</th>
+                    <td>
+                        <select name="start_date">
+                            <option value=""></option>
+                        </select>
+                        <select name="start_date">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>End date</th>
+                    <td>
+                        <select name="end_date">
+                            <option value=""></option>
+                        </select>
+                        <select name="end_date">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Name on card</th>
+                    <td><input type="text" name="name_on_card"></td>
+                </tr>
+                <tr>
+                    <th>Issue number</th>
+                    <td><input type="text" name="issue_number"></td>
+                </tr>
+                <tr>
+                    <th>Security code</th>
+                    <td><input type="text" name="sec_code"></td>
+                </tr>
+            </table>
+            <p>Your card will be charged a deposit fee of &pound;50</p>
+        </div>
+
+        <p id="continue">Continue with booking</p>
+    </div> <!-- div#content -->
+
+</div>
+
+</body>
+</html>

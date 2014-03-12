@@ -1,0 +1,67 @@
+/* base style for all pages */
+
+* {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+
+div#main{
+    height: auto;
+    width: 1024px;
+    background-color: #d8eff0;
+    padding-bottom: 200px;
+}
+
+
+div#content {
+    padding-left: 40px;
+    color: #676767;
+}
+
+p.continue {
+    background-color: #00B1B0;
+    color: #FFFFFF;
+    margin-top: 50px;
+    padding: 2px;
+    width: 200px;
+    margin-left: auto;
+}
+
+/* when loading the page */
+div.hidden {
+    display: none;
+}
+p.continue {
+    display: none;
+    margin-right: 100px;
+}
+
+
+table th {
+    font-weight: normal;
+    text-align: left;
+}
+div#content input {
+    border: 1px solid #C1CCCE;
+}
+
+tr#postcode span, tr.postcode span {
+    font-size: 0.7em;
+}
+
+div#content td.cell {
+    width: 100px;
+    height: 80px;
+}
+div#content td.time {
+    width: 50px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* show pointer */
+div.page1 td:last-child, p.continue, input[name="service"], input[name="dentist"], td.time {
+    cursor: pointer;
+}

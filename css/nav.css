@@ -1,0 +1,36 @@
+/* -------------------------------------------- nav bar ----------------------------------------------- */
+div.nav {
+    position: relative;
+}
+div.nav div.nav-box {
+    font-size: 0.7em;
+    width: auto;
+    display: inline-block;
+    margin-left: 40px;
+}
+div.nav div.nav-box p {
+    margin-top: 10px;
+    text-align: center;
+}
+div.nav img {
+    position: absolute;
+    top: 10px;
+    height: 10px;
+    width: 7px;
+}
+div.nav div.circle {
+    background-color: #00B1B0;
+    border-radius: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25px;
+}
+
+div.nav div.circle p {
+    position: absolute;
+    right: 10px;
+    top: -4px;
+    color: white;
+}
+/* nav bar */

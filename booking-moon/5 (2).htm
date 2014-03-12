@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>online booking</title>
+<style>
+[name="Book Appointment"] {
+    margin-left: 610px;
+    position: absolute;
+    margin-top: -33px;
+    background-color: #20B2AA;
+    border: 0px;
+}
+#paymentdetails_rightpart {
+    margin-left: -26px;
+    margin-top: 40px;
+}
+#paymentdetails_leftpart {
+    margin-left: 27px;
+}
+[name="start_month"] {
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    margin-left: -200px;
+    width: 118px;
+}
+[name="start_date"] {
+    background-color: #F5F5F5;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 62px;
+}
+.bar ul li {
+    background-color: #808080;
+    border: 1px solid #808080;
+    border-radius: 23px;
+    color: #FFFFFF;
+    margin-left: 79px;
+    text-align: center;
+    width: 23px;
+}
+.bar ul li ul li {
+    background-color: #87CEFA;
+    border: medium none;
+    color: #808080;
+    margin-left: -48px;
+    margin-top: 52px;
+    position: absolute;
+    width: 105px;
+}
+.bar li {
+    border: 1px solid;
+    float: left;
+    width: 114px;
+}
+.bar ul {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.text {
+    color: #808080;
+    font-size: 52%;
+}
+#selectservicesecond {
+    margin-left: 20px;
+    margin-top: -21px;
+    position: absolute;
+}
+#calendar {
+    border: 1px solid;
+}
+#header {
+    font-size: 179%;
+}
+#doctor_info {
+    display: none;
+}
+#button {
+    float: right;
+}
+#year {
+    margin-left: 177px;
+    position: absolute;
+}
+#month {
+    margin-left: 52px;
+    position: absolute;
+}
+#date {
+    margin-left: 0;
+    position: absolute;
+}
+[name="day"], [name="month"], [name="year"] {
+    background-color: #F5F5F5;
+    border-radius: 7px;
+    margin-left: -178px;
+    position: absolute;
+    text-align: center;
+}
+input[type="text"] {
+    margin-left: -140px;
+    width: 243px;
+}
+input[name="lookup"] {
+    background-color: #20B2AA;
+    border: 0 solid;
+    color: #FFFFFF;
+    margin-left: -113px;
+    width: 108px;
+}
+input[name="postcode"] {
+    width: 130px;
+}
+[name="title"] {
+    border: 1px solid;
+    border-radius: 5px;
+    height: 27px;
+    margin-left: -138px;
+    text-align: center;
+    top: 296px;
+    width: 134px;
+}
+[name="cardtype"] {
+    border: 1px solid;
+    width: 213px;
+}
+[name="Card Number"] {
+    border: 1px solid #808080;
+    width: 269px;
+}
+#rightpart {
+    margin-left: 405px;
+    margin-top: -240px;
+    position: absolute;
+    width: 508px;
+}
+[name="Name on card"] {
+    border: 1px solid #808080;
+    width: 269px;
+}
+tr td {
+    color: graytext;
+}
+[name="close"] {
+    height: 17px;
+    margin-left: 261px;
+}
+div#main {
+    background-color: #B7E3D4;
+    height: 541px;
+    margin-bottom: 90px;
+    margin-left: 285px;
+    margin-top: 90px;
+    width: 763px;
+}
+[name="close"] {
+    border: 0 solid;
+    margin-left: 734px;
+    margin-top: 5px;
+    width: 17px;
+}
+.title {
+    background-color: #70C6AD;
+    border-bottom: 4px solid #70C6AD;
+    color: #FFFFFF;
+    font-size: 13px;
+    height: 22px;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    width: 763px;
+}
+
+
+</style>
+ <link rel="stylesheet" href="./jquery-ui.css">
+<script src="./jquery-1.9.1.min.js"></script>
+<script src="./jquery-ui.min.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+</head>
+<body>
+<div id="main">
+	<div class="title">
+	<p style="margin-left:11px;margin-top:3px;position:absolute;">B Dental Online Booking System</p>
+	<img name="close" src="./img/close.png"/>
+	</div>
+	<div id="heading">
+	<p>online booking<p>
+	</div>
+
+
+<div class="bar">
+<ul>
+	<li >1
+		<ul>
+			<li ><a class="text">Select Service</a></li>
+		</ul>
+	</li>
+	<li >2
+		<ul>
+			<li ><a class="text">Select Dentist</a></li>
+		</ul>
+	</li>
+	<li >3
+		<ul>
+			<li ><a class="text">Select Date & Time</a></li>
+		</ul>
+	</li>
+	<li >4
+		<ul>
+			<li><a class="text">Selection Summary</a></li>
+		</ul>
+	</li>
+	<li >5
+		<ul>
+			<li ><a class="text">Patient Details</a></li>
+		</ul>
+	</li>
+	<li>6
+		<ul>
+			<li ><a class="text">Payment Details</a></li>
+		</ul>
+	</li>
+	<li >7
+		<ul>
+			<li ><a class="text">Booking confirmation</a></li>
+		</ul>
+	</li>
+		
+</ul>
+</div>
+<br>
+<br>
+<br><br>
+<br>
+
+<div id="leftpart">
+<table id="paymentdetails_leftpart">
+	<tr>
+	<td>Payment Details</td>
+	</tr>
+	<tr>
+		<td><input type="radio" name="select_homeaddress" value="Select if same as home address">Select if same as home address</input></td>
+	</tr>
+	<tr></tr>
+	<tr>
+		<td>Title</td><td class="patient_details">
+					<label>
+						<select name="title">
+						<option value="Abcdef">Abcdef</option>
+						<option value="ghijk">ghijk</option>
+						<option value="lmnop">lmnop</option>
+						</select>
+					</label>	
+					</td>
+	</tr>
+	<tr>
+		<td>First Name</td><td class="patient_details"><input type="text" name="firstname"/></td>
+	</tr>
+	<tr>
+		<td>Last Name</td><td class="patient_details"><input type="text" name="lastname"/></td>
+	</tr>
+	<tr>
+		<td>Post Code</td><td class="patient_details"><input type="text" name="postcode"/></td>
+		<td><form action="#"><input type="button" name="lookup" id="lookup" value="Lookup"/></form>
+	</tr>
+	<tr>
+		<td>Address</td><td class="patient_details"><input type="text" name="address" textarea="width:200px"/></td>
+							
+	</tr>
+	<tr>
+		<td></td><td class="patient_details"><input type="text" name="address"/></td>
+	</tr>
+	
+	
+</table>
+</div>
+<div id="rightpart">
+<table id="paymentdetails_rightpart">
+	
+	<tr>
+		<td>Card type*</td>
+					<td>
+					<label>
+						<select name="cardtype">
+						<option value="Abcdef">Abcdef</option>
+						<option value="ghijk">ghijk</option>
+						<option value="lmnop">lmnop</option>
+						</select>
+					</label>	
+					</td><br>
+		<td></td><td>jhjkhjkh</td>			
+	</tr>
+	<tr>
+		<td>Card Number*</td><td><input type="text_" name="Card Number"/></td>
+	</tr>
+	<tr>
+		<td>Start date*</td><td id="start_date">
+					<label>
+						<select name="start_date">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+						
+					</select>
+					</label>	
+					</td>
+					<td id="start_month">
+					<label>
+						<select name="start_month">
+						<option value="January">January</option>
+						<option value="February">February</option>
+						<option value="March">March</option>
+						<option value="April">April</option>
+						<option value="May">May</option>
+						<option value="June">June</option>
+						<option value="July">July</option>
+						<option value="August">August</option>
+						<option value="September">September</option>
+						<option value="October">October</option>
+						<option value="November">November</option>
+						<option value="December">December</option>
+						
+					</select>
+					</label>	
+					</td>
+					
+	</tr>
+	<tr>
+		<td>End date*</td><td id="start_date">
+					<label>
+						<select name="start_date">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+						
+					</select>
+					</label>	
+					</td>
+					<td id="start_month">
+					<label>
+						<select name="start_month">
+						<option value="January">January</option>
+						<option value="February">February</option>
+						<option value="March">March</option>
+						<option value="April">April</option>
+						<option value="May">May</option>
+						<option value="June">June</option>
+						<option value="July">July</option>
+						<option value="August">August</option>
+						<option value="September">September</option>
+						<option value="October">October</option>
+						<option value="November">November</option>
+						<option value="December">December</option>
+						
+					</select>
+					</label>	
+					</td>
+					
+	</tr>
+	<tr>
+		<td>Name on card*</td><td><input type="text_" name="Name on card"/></td>
+	</tr>
+	<tr>
+		<td>Issue number</td><td><input type="text_" name="Issue number"/></td>
+	</tr>
+	<tr>
+		<td>Security code*</td><td><input type="text_" name="Security code"/></td>
+	</tr>
+</table>
+</div>
+<br>
+<br>
+<div id="button">
+<input type="button" value="Book Appointment" name="Book Appointment" />
+</div>
+
+</div>
+	
+
+</body>
+</html>

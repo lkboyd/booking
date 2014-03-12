@@ -1,0 +1,23 @@
+/* base style for all pages */
+
+* {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+
+div#main{
+    height: auto;
+    width: auto;
+    background-color: #d8eff0;
+}
+
+
+p.continue {
+    background-color: #00B1B0;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-top: 50px;
+    padding: 2px;
+    width: 200px;
+}

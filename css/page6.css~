@@ -1,0 +1,25 @@
+div#service-box div.row p {
+    display: inline-block;
+}
+
+
+p.continue {
+    background-color: #00B1B0;
+    color: #FFFFFF;
+    margin-top: 50px;
+    padding: 2px;
+}
+
+div#booking-conf, div#create-account {
+    display: inline-block;
+    vertical-align: top;
+}
+div#create-account {
+    background-color: #9ED8D5;
+    padding: 30px;
+}
+
+div#create-account p:last-child {
+    width: 60%;
+    margin-left: auto;
+}

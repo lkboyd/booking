@@ -1,0 +1,36 @@
+div.page3 {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+#summary > p:first-child {
+    
+}
+div#summary table tr {
+    text-align: left;
+}
+div#summary table th, div#summary table td {
+    font-size: 0.8em;
+    padding-top: 10px;
+}
+
+div#summary table th {
+    font-weight: normal;
+    padding-right: 20px;
+}
+div#summary table+p {
+    color: #00B1B0;
+    font-size: 0.95em;
+    margin-top: 15px;
+}
+div#statement {
+    margin-top: 30px;
+    width: 70%;
+}
+div#statement p {
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+div#statement p:last-child {
+    padding-left: 20px;
+}

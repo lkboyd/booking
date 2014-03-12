@@ -1,0 +1,84 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+body {
+
+    margin: 10px;
+}
+
+div.main {
+    height: 600px;
+    width: 800px;
+    background-color: #b5e1e1;
+}
+div.title {
+    height: 20px;
+    background-color: #68c8c6;
+}
+div.nav {
+    
+}
+div.body {
+    
+}
+
+/* calender */
+div#cal_nav_bar {
+
+    height: 20px;
+    width: 700px;
+    border: 1px solid blue;
+}
+div#cal_nav_bar div {
+
+    width: 100px;
+    height: 10px;
+    border: 1px solid;
+}
+div#left {
+
+    float: left;
+}
+div#right {
+
+    float: right;
+}
+div#middle {
+    margin-left: auto;
+    margin-right: auto;
+}
+div#left, div#middle, div#right {
+	height: 20px;
+	width: 120px;
+	border: 1px solid;
+}
+table#mtable {
+    border-collapse: collapse;
+}
+td[id*="cell"] {
+
+    border: 1px solid black;
+}
+tr#row0 {
+
+    text-align: center;
+}
+table.dtable td {
+
+    width: 30px;
+    font-size: .6em;
+    vertical-align: bottom;
+    background-color: #B7E3D4;
+}
+
+table#mtable td[id*="cell"] div {
+	height: 20px;
+	width: 40px;
+	text-align: right;
+	margin-right: 0px;
+	float: right;
+	font-size: .6em;
+} 
+/* calender ends */

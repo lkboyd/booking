@@ -1,0 +1,75 @@
+div.page5 {
+    margin-top: 50px;
+    padding-right: 20px;
+}
+
+
+div#address > p:first-child {
+    margin-bottom: 20px;
+}
+
+div#address [name="same_as_home"]+span {
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+
+div#address table {
+    margin-top: 10px;
+}
+
+div#address input {
+    border: 1px solid #C1CCCE;
+}
+
+div#address table th {
+    font-size: 0.7em;
+    font-weight: normal;
+    padding-right: 20px;
+    text-align: left;
+}
+div#address table td {
+    width: auto;
+}
+div#address, div#pay_proc {
+    display: inline-block;
+    vertical-align: top;
+}
+tr#postcode input, tr#postcode span {
+    display: inline-block;
+}
+tr#postcode span {
+    background: none repeat scroll 0 0 #00B1B0;
+    color: #FFFFFF;
+    padding: 2px 15px;
+}
+div#address tr:not(#postcode) input {
+    width: 100%;
+}
+
+div#pay_proc {
+    padding-left: 50px;
+}
+
+div#pay_proc [name="card_type"] {
+    
+}
+
+div#pay_proc table img {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+div#pay_proc table th {
+    font-size: 0.7em;
+    font-weight: normal;
+    padding-right: 20px;
+    text-align: left;
+}
+
+div#pay_proc table+p {
+    font-size: 0.7em;
+    margin-top: 20px;
+    padding-left: 30px;
+}

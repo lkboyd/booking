@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/title.css"> <!-- title bar and close button adn heading -->
+    <link rel="stylesheet" href="css/nav.css"> <!-- top navigation section -->
+
+    <link rel="stylesheet" href="css/page1.css">
+    <link rel="stylesheet" href="css/page2.css">
+    <link rel="stylesheet" href="css/page3.css">
+    <link rel="stylesheet" href="css/page4.css">
+    <link rel="stylesheet" href="css/page5.css">
+    <link rel="stylesheet" href="css/page6.css">
+    <link rel="stylesheet" href="css/page7.css">
+    
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+
+<div id="main">
+    <div class="title-bar">
+        <p class="title-text">Dental online booking system</p>
+        <div class="close">
+        </div>
+    </div>
+
+    <p id="heading">online booking</p>
+
+    <div class="nav">
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>1</p>
+            </div>
+            <p>Select Service</p>
+        </div>
+        <img src="img/arrow-right.png"></img>
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>2</p>
+            </div>
+            <p>Select Dentist</p>
+        </div>
+        <img src="img/arrow-right.png"></img>
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>3</p>
+            </div>
+            <p>Select Date &amp; Time</p>
+        </div>
+        <img src="img/arrow-right.png"></img>
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>4</p>
+            </div>
+            <p>Selection summary</p>
+        </div>
+        <img src="img/arrow-right.png"></img>
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>5</p>
+            </div>
+            <p>Patient Details</p>
+        </div>
+        <img src="img/arrow-right.png"></img>
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>6</p>
+            </div>
+            <p>Payment Details</p>
+        </div>
+        <img src="img/arrow-right.png"></img>
+        <div class="nav-box inline">
+            <div class="circle">
+                <p>7</p>
+            </div>
+            <p>Booking Confirmation</p>
+        </div>
+    </div>
+
+    <div id="content">
+
+    </div>
+    <p class="continue">Continue with booking</p>
+
+    <div class="hidden">
+        <div class="page1">
+            <p>Please select one of the following options to proceed:</p>
+            <table>
+                <tr>
+                    <td>
+                        <p>New Client:</p>
+                        <p>For general</p>
+                        <p>dental treatment</p>
+                    </td>
+                    <td>
+                        <p>New Client:</p>
+                        <p>Referred to see</p>
+                        <p>a specialist</p>
+                    </td>
+                    <td class="clickable">
+                        <p>Existing Client:</p>
+                        <p>book an</p>
+                        <p>appointment</p>
+                    </td>
+                </tr>
+            </table>
+            <!--
+            <div>
+                <p>New Client:</p>
+                <p>For general</p>
+                <p>dental treatment</p>
+            </div>
+            <div>
+                <p>New Client:</p>
+                <p>Referred to see</p>
+                <p>a specialist</p>
+            </div>
+            <div>
+                <p>Existing Client:</p>
+                <p>book an</p>
+                <p>appointment</p>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div class="page2">
+            <div class="inline serve">
+                <p>Select Service</p>
+                <div class="service">
+                    <input type="radio" class="radio" name="service" value="New patient exam"/>New patient exam<br>
+                    <input type="radio" class="radio" name="service" value="New patient exam hygiene treatment"/><span class="lh">New patient exam +<br>&nbsp;&nbsp;&nbsp;hygiene treatment(regular)</span>
+                </div>
+                <p>Select Dentist</p>
+                <div class="dentist">
+                    <input type="radio" name="dentist" value="Dr sosen Botani"/>Dr Sosen Botani<br>
+                    <input type="radio" name="dentist" value="Dr Tu Anh Chau"/>Dr Tu Anh Chau<br>
+                    <input type="radio" name="dentist" value="Dr Phillip Walburg"/>Dr Phillip Walburg<br>
+                    <input type="radio" name="dentist" value="Any Dentist"/>Any Dentist<br>
+                </div>
+            </div>
+            <div class="inline">
+                <p>Select Date and Time</p>
+                <div id="calender">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div class="page3">
+            <div id="summary">
+                <p>Selection Summary</p>
+                <table>
+                    <tr>
+                        <th>Service:</th><td id="selected_service_name"></td>
+                    </tr>
+                    <tr>
+                        <th>Dentist:</th><td id="selected_dentist_name"></td>
+                    </tr>
+                    <tr>
+                        <th>Date:</th><td id="selected_date"></td>
+                    </tr>
+                    <tr>
+                        <th>Time:</th><td id="selected_time"></td>
+                    </tr>
+                </table>
+                <p>ammend booking</p>
+            </div>
+            <div id="statement">
+                <p>
+                    Our initial examination is £70, this is a 45 minute appointment and includes a full oral health check, small x-rays and treatment planning. The cost of a 30 minute hygiene appointment is £60, which also includes oral hygiene advice.
+                </p>
+
+                <p>
+                    In order to secure the appointment we will need to take your details and a deposit of £50. We then ask that if you need to reschedule your appointment that you provide us with a minimum of 48 hours notice.
+                </p>
+
+                <p>
+                    Late Cancellation Fees: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan ac felis sit amet ullamcorper. Sed ac neque porta, mollis enim quis.
+                </p>
+
+                <p>
+                    I have read, understood and accept these terms and conditions.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div class="page4">
+            <div id="pat_det">
+                <p>Patient Details</p>
+                    <table>
+                        <tr>
+                            <th>Title</th>
+                            <td>
+                                <select name="title">
+                                    <option value=""></option>
+                                    <option value="Mr">Mr</option>
+                                    <option value="Ms">Ms</option>
+                                    <option value="Mrs">Mrs</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>First Name</th>
+                            <td>
+                                <input name="firstname" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Last Name</th>
+                            <td>
+                                <input name="lastname" type="text">
+                            </td>
+                        </tr>
+                        <tr id="postcode">
+                            <th>Post Code</th>
+                            <td>
+                                <input name="postcode" type="text">
+                                <span>Lookup</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td>
+                                <input name="address-1" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><input type="text" name="address-2"></td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>
+                                <input type="email" name="email" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</th>
+                            <td>
+                                <input name="mobile" type="number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>DOB</th>
+                            <td>
+                                <select name="DOB_day">
+                                    <option value="">select day</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <select name="DOB_month">
+                                    <option value="0">Select month</option>
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                                <select name="DOB_year">
+                                    <option value="">Select year</option>
+                                </select>
+                                <script type="text/javascript">
+                                    for( var i=1900; i<2014; i++ ) {
+                                        var option = '<option value="'+i+'">'+i+'</option>';
+                                        $('[name="DOB_year"]').append(option);
+                                    }
+                                </script>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div class="page5">
+            <div id="address">
+                <p>Payment Details</p>
+                <input type="radio" name="same_as_home"><span>Select if same as home address</span>
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <td>
+                            <select name="title">
+                                <option value=""></option>
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Ms">Ms</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>First name</th>
+                        <td><input type="text" name="fname"></td>
+                    </tr>
+                    <tr>
+                        <th>Last name</th>
+                        <td><input type="text" name="lname"></td>
+                    </tr>
+                    <tr id="postcode">
+                        <th>Post code</th>
+                        <td>
+                            <input type="text" name="postcode">
+                            <span>Lookup</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td><input type="text" name="address"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="pay_proc">
+                <table>
+                    <tr>
+                        <th>Card type</th>
+                        <td>
+                            <select name="card_type">
+                                <option value=""></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <img src="img/pay_icon.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Card Number</th>
+                        <td>
+                            <input type="text" name="card_number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Start date</th>
+                        <td>
+                            <select name="start_month">
+                                <option value=""></option>
+                                <option value="0">Select month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <select name="start_year">
+                                <option value=""></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>End date</th>
+                        <td>
+                            <select name="end_month">
+                                <option value=""></option>
+                                <option value="0">Select month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <select name="end_year">
+                                <option value=""></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <script type="text/javascript">
+                        for( var i=1900; i<2014; i++ ) {
+                            var option = '<option value="'+i+'">'+i+'</option>';
+                            $('[name="start_year"]').append(option);
+                            $('[name="end_year"]').append(option);
+                        }
+                    </script>
+                    <tr>
+                        <th>Name on card</th>
+                        <td><input type="text" name="name_on_card"></td>
+                    </tr>
+                    <tr>
+                        <th>Issue number</th>
+                        <td><input type="text" name="issue_number"></td>
+                    </tr>
+                    <tr>
+                        <th>Security code</th>
+                        <td><input type="text" name="sec_code"></td>
+                    </tr>
+                </table>
+                <p>Your card will be charged a deposit fee of &pound;50</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div class="page6">
+            <div id="booking-conf">
+                <p>Booking Confirmation</p>
+                <p>Thank you for booking your appointment</p>
+
+                <div id="service-box">
+                    <div class="row">
+                        <p>Service</p><p>Some</p>
+                    </div>
+                    <div class="row">
+                        <p>Dentist</p><p></p>
+                    </div>
+                    <div class="row">
+                        <p>Date</p><p></p>
+                    </div>
+                    <div class="row">
+                        <p>Time</p><p></p>
+                    </div>
+                </div>
+                <div>
+                    <p>Your credit/debit card will be charged a deposit amount of &pound;50.00</p>
+                    <p>You will receive an email confirmation shortly</p>
+                    <p><a href="#">click here</a> to finish and close this window</p>
+                </div>
+            </div>
+
+            <div id="create-account">
+                <p>Optional create an online account</p>
+                <p>Creating an online account will allow you to</p>
+                <ul>
+                    <li>Access and edit your personal details</li>
+                    <li>Book new appointments</li>
+                    <li>View, cancel or ammend esisting appointments</li>
+                </ul>
+                <div class="row">
+                    <p>Password</p><input type="password" name="password1">
+                    <p>Confirm password</p><input type="password" name="password2" >
+                </div>
+                <p>Create an online account</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div class="page7">
+            <p>Thank you for creating an online account</p>
+            <p>click here to log into your account</p>
+            <p>click here to finish and close this window</p>
+        </div>
+    </div>
+
+</div>
+<!-- now load all the hell of js -->
+<script type="text/javascript" src="js/cal_template.js"></script>
+<script type="text/javascript" src="js/calender.js"></script>
+<script type="text/javascript" src="js/service.js"></script>
+<script type="text/javascript" src="js/steps.js"></script>
+
+
+</body>
+</html>

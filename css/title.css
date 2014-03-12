@@ -1,0 +1,31 @@
+/* ----------------------------- title box for all pages-------------------------- */
+div.title-bar {
+    background-color: #65C8C6;
+    font-size: 0.6em;
+    height: 20px;
+    padding: 5px;
+    position: relative;
+}
+div.title-bar div.close {
+    background-image: url("../img/close.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    float: right;
+    height: 20px;
+    width: 20px;
+}
+div.title-bar p.title-text, div.title-bar div.close {
+    display: inline-block;
+}
+div.title-bar p.title-text {
+    color: #FFFFFF;
+    vertical-align: middle;
+}
+
+div.title-bar+p#heading {
+    color: #68C8C6;
+    font-size: 2em;
+    margin: 20px;
+}
+/* --------------------------------------------- end title box ----------------------------------------- */

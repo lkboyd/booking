@@ -1,0 +1,41 @@
+div.page3 {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+#summary > p:first-child {
+    font-weight: bold;
+}
+
+div#summary table {
+    margin-top: 10px;
+}
+div#summary table tr {
+    text-align: left;
+}
+
+div#summary table th {
+    font-weight: normal;
+    padding-right: 10px;
+}
+div#summary table+p {
+    margin-top: 10px;
+}
+div#statement {
+    margin-top: 20px;
+    width: 70%;
+}
+div#statement p {
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+div#statement p:last-child {
+    padding-left: 20px;
+}
+p#continue {
+    background-color: #00B1B0;
+    color: #FFFFFF;
+    margin-left: auto;
+    padding: 2px;
+    width: 200px;
+}

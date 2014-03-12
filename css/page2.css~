@@ -1,0 +1,128 @@
+div#title-text {
+    font-size: .6em;
+
+}
+div.title {
+    height: 20px;
+    background-color: #68c8c6;
+}
+div#close {
+    background: url('../img/close.png') no-repeat;
+}
+h2 {
+    color: #68c8c6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-family: arial;
+}
+div.nav {
+
+}
+div.page2 {
+    margin-top: 40px;
+}
+div.service, div.dentist {
+    font-size: .7em;
+}
+div.service {
+    margin-top: 20px;
+}
+div.service+p {
+    margin-top: 30px;
+}
+div.dentist {
+    margin-top: 20px;
+}
+div.serve {
+    margin-right: 100px;
+}
+span.lh {
+    line-height: 60%;
+}
+
+/* calender */
+div#calender+p {
+    background-color: #00B1B0;
+    color: #FFFFFF;
+    float: right;
+    font-size: 0.8em;
+    margin-top: 20px;
+    padding: 3px;
+    text-align: center;
+    width: 150px;
+}
+tr.nav-row div {
+    padding: 0 0 5px;
+}
+tr.week-names {
+    text-align: center;
+    font-size: .7em;
+}
+td.cell {
+    background-color: white;
+    height: 60px;
+}
+td.cell div {
+    font-size: 0.7em;
+    height: 20px;
+    padding: 0 5px;
+    text-align: right;
+}
+table.mtable div#left {
+    background: url(../img/arrow-left.png) no-repeat;
+    background-position: left;
+    background-size: 8px 10px;
+    padding-left: 15px;
+    float: left;
+    font-size: .6em;
+}
+table.mtable div#right {
+    background: url(../img/arrow-right.png) no-repeat;
+    background-position: right;
+    background-size: 8px 10px;
+    text-align: right;
+    padding-right: 15px;
+    float: right;
+    font-size: .6em;
+}
+table.mtable div#middle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: .8em;
+}
+table.mtable div#left, table.mtable div#middle, table.mtable div#right {
+	width: 120px;
+}
+table.mtable {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+td.cell {
+    border: 1px solid black;
+}
+tr#row0 {
+
+    text-align: center;
+}
+table.dtable td {
+    padding: 0 5px;
+    font-size: .6em;
+    vertical-align: bottom;
+    background-color: #B7E3D4;
+}
+
+table#mtable td.cell div {
+}
+/* calender ends */
+div.arrow {
+    background: url("img/arrow-right.png") no-repeat;
+}
+div.circle {
+    position: relative;
+}
+div.page2>div {
+    display: inline-block;
+    vertical-align: top;
+}

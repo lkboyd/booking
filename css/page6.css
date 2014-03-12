@@ -1,0 +1,67 @@
+div.page6 {
+    margin-top: 50px;
+}
+
+div#booking-conf {
+    margin-top: 20px;
+}
+
+div#booking-conf > p:first-child {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+div#booking-conf > p:not(:first-child), div#booking-conf div#service-box, div#booking-conf div:last-child {
+    font-size: 0.7em;
+}
+
+div#booking-conf>p:nth-child(2) {
+    margin-top: 10px;
+}
+
+div#booking-conf div#service-box div.row>p:first-child {
+    margin-right: 20px;
+}
+
+div#service-box div.row p {
+    display: inline-block;
+}
+
+div#booking-conf, div#create-account {
+    display: inline-block;
+    vertical-align: top;
+}
+div#booking-conf div#service-box+div p {
+    margin-top: 20px;
+}
+
+div#booking-conf div#service-box+div p:last-child a {
+    
+}
+
+div#create-account {
+    background-color: #9ED8D5;
+    padding: 30px;
+    margin-left: 50px;
+}
+
+
+div#create-account ul {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+div#create-account div.row {
+    margin-top: 20px;
+}
+
+div#create-account p:last-child {
+    background-color: #00B1B0;
+    font-size: 0.7em;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 5px;
+    width: 60%;
+}
+div#create-account>p:nth-child(2), div#create-account  li, div#create-account div.row, div#create-account>p:last-child {
+    font-size: .6em;
+}

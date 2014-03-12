@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>online booking</title>
+<style>
+.title {
+    height: 22px;
+    color: white;
+    background-color: #70C6AD;
+    margin-top: 0px;
+    border-bottom: 4px solid #70C6AD;
+    font-size: 13px;
+    margin-left: 0px;
+    position: absolute;
+    width: 763px;
+}
+
+#AmendBooking {
+    margin-left: 22px;
+}
+div#main {
+    background-color: #B7E3D4;
+    height: 541px;
+    margin-bottom: 90px;
+    margin-left: 285px;
+    margin-top: 90px;
+    width: 763px;
+}
+[name="close"] {
+    border: 0 solid;
+    margin-left: 734px;
+    margin-top: 5px;
+    width: 17px;
+}
+element.style {
+    background-color: #87CEFA;
+    display: block;
+    height: 422px;
+    left: 245px;
+    padding: 0;
+    position: absolute;
+    top: 54px;
+    width: 850px;
+}
+.bar ul li {
+    background-color: #808080;
+    border: 1px solid #808080;
+    border-radius: 23px;
+    color: #FFFFFF;
+    margin-left: 79px;
+    text-align: center;
+    width: 23px;
+}
+.bar ul li ul li {
+    background-color: #87CEFA;
+    border: medium none;
+    color: #808080;
+    margin-left: -48px;
+    margin-top: 52px;
+    position: absolute;
+    width: 105px;
+}
+.bar li {
+    border: 1px solid;
+    float: left;
+    width: 114px;
+}
+.bar ul {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.text {
+    color: #808080;
+    font-size: 52%;
+}
+#selectservicesecond {
+    margin-left: 20px;
+    margin-top: -20px;
+    position: absolute;
+}
+#calendar {
+    border: 1px solid;
+}
+#header {
+    font-size: 179%;
+}
+#doctor_info {
+    display: none;
+}
+[name="Continue with booking"] {
+    background-color: #20B2AA;
+    border: 0 none;
+    margin-left: 590px;
+    margin-top: -70px;
+    position: absolute;
+}
+.secondcol {
+    margin-left: 109px;
+    margin-top: -1px;
+}
+.firstcol {
+    margin-left: 23px;
+    margin-top: -2px;
+    position: absolute;
+}
+#selectionsummary_description {
+    font-size: 12px;
+    margin-left: 21px;
+    width: 60%;
+}
+#selectionsummary {
+    margin-left: 22px;
+}
+
+
+</style>
+ <link rel="stylesheet" href="./jquery-ui.css">
+<script src="./jquery-1.9.1.min.js"></script>
+<script src="./jquery-ui.min.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+</head>
+<body>
+
+<div id="main">
+	<div class="title">
+	<p style="margin-left:11px;margin-top:3px;position:absolute;">B Dental Online Booking System</p>
+	<img name="close" src="./img/close.png"/>
+	</div>
+	<div id="heading">
+	<p>online booking<p>
+	</div>
+
+
+
+<div class="bar">
+<ul>
+	<li >1
+		<ul>
+			<li ><a class="text">Select Service</a></li>
+		</ul>
+	</li>
+	<li >2
+		<ul>
+			<li ><a class="text">Select Dentist</a></li>
+		</ul>
+	</li>
+	<li >3
+		<ul>
+			<li ><a class="text">Select Date & Time</a></li>
+		</ul>
+	</li>
+	<li >4
+		<ul>
+			<li><a class="text">Selection Summary</a></li>
+		</ul>
+	</li>
+	<li >5
+		<ul>
+			<li ><a class="text">Patient Details</a></li>
+		</ul>
+	</li>
+	<li>6
+		<ul>
+			<li ><a class="text">Payment Details</a></li>
+		</ul>
+	</li>
+	<li >7
+		<ul>
+			<li ><a class="text">Booking confirmation</a></li>
+		</ul>
+	</li>
+		
+</ul>
+</div>
+<br>
+<br>
+<br><br>
+<br>
+<table id="selectionsummary">
+<tbody>
+<tr><td>Selection Summary</td></tr>
+<tr><td>Service:</td><td>New patient exam + hygiene treatment</td></tr>
+<tr><td>Dentist:</td><td>Dr Sosen Botani</td></tr>
+<tr><td>Date:</td><td>27 May 2012</td></tr>
+<tr><td>Time:</td><td>11:30am</td></tr>
+</tbody>
+</table>
+<div >
+<p id="AmendBooking">Amend Booking</p>
+<p id="selectionsummary_description">Our initial examination is &pound70, this is a 45 minute appointment and includes a full oral
+health check, small x-rays and treatment planning. The cost of a 30 minute hygiene
+appointment is &pound60, which also includes oral hygiene advice.<br><br>
+In order to secure the appointment we will need to take your details and a deposit of
+&pound50. We then ask that if you need to reschedule your appointment that you provide us
+with a minimum of 48 hours notice.<br><br>
+Late Cancellation Fees: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan ac felis sit amet ullamcorper. Sed ac neque porta, mollis enim quis.
+<br><br>
+I have read, understood and accept these terms and conditions.
+</p>
+</div>
+
+<br>
+<br>
+<div id="button">
+<input type="button" value="Continue with booking" name="Continue with booking" />
+</div>
+<div id="doctor_info">
+<img id="doctorpic" src="1.jpg"/>
+<p style="color:#87CEFA">Sosen Botani, DDS<br>
+General & Cosmetic Dentist</p>
+
+</div>
+</div>
+
+
+
+
+<script>
+$(document).ready(function(){
+		$("#dialog").dialog(
+			{modal:true,width:850,height:650,
+			title:"B Dental Online Booking System"
+			
+			})
+		
+		})
+$(document).ready(function() {
+	$("#firstdoc").click(function(){
+    $( "#doctor_info" ).dialog({
+      
+      dialogClass: 'dialogStyle',
+	 
+      resizable: false,
+      height:440,
+	  width:440,
+      modal: true,
+	  title:"Dr Sosan Botani DDS"
+	
+    })
+	})
+	})
+</script>
+</body>
+</html>
